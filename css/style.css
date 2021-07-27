@@ -150,6 +150,7 @@ p{
 h1 {
     font-family: 'Poppins', sans-serif;
     font-size: 48px;
+    font-weight: 700;
 }
 
 h2 {
@@ -179,6 +180,13 @@ h5{
 font-style: normal;
 font-weight: normal;
 font-size: 150%;
+}
+
+h6{
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    color:lightseagreen;
+    font-size: 24px;
 }
 
 
@@ -271,7 +279,6 @@ font-size: 150%;
 #contentNav {
     background-color: white;
     height: 100px;
-    position:sticky;
     font-weight: 600;
 
 }
@@ -287,15 +294,76 @@ font-size: 150%;
     border-radius: 0;
 }
 
-.error {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    max-width: 100%;
-    padding-left: 20%;
-    padding-right: 20%;
+.overview {
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: white;
+  
+}
 
+.research {
+    margin: 0 auto;
+    padding: 50px;
+    border-radius: 20px;
+    background-color: white;
+  
+}
+.bestbits{
+    padding:50px;
+}
+#fast_forward{
+    padding-left: 20px;
+    width: 48px;
+    align-items: baseline;
+}
+
+.btn-primary{
+    background-color:lightseagreen;
+    border: none;
+
+}
+.card{
+    border: none;
+    border-radius: 12px;
+    margin: 0 auto;
+}
+.pageContent{
+    padding-right: 10%;
+    padding-left: 10%;
+}
+
+.team {
+    background-color: rgb(209, 230, 230);
+    border-radius: 20px;
+    padding:30px;
+}
+
+.casestudyimages{
+    position: relative;
+}
+.badge {
+    position: absolute;
+    left: 500px;
+    top: 2100px;
+    
+
+}
+
+.casestudyheadings {
+    font-size: 68px;
+    font-weight: 100;
+}
+
+.casestudysubhead {
+    font-size: 38px;
+}
+
+.designprocess {
+    text-align: center;
+}
+.designprocess ul {
+    padding: 0;
 }
 
 button {
