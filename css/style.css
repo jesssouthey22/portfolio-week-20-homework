@@ -294,7 +294,9 @@ h6{
     border-radius: 0;
 }
 
-.overview {
+
+
+.overview, .designprocess, .research, .define, .lowfiwires, .styledev {
     margin: 0 auto;
     padding: 50px;
     border-radius: 20px;
@@ -302,13 +304,6 @@ h6{
   
 }
 
-.research {
-    margin: 0 auto;
-    padding: 50px;
-    border-radius: 20px;
-    background-color: white;
-  
-}
 .bestbits{
     padding:50px;
 }
@@ -359,7 +354,7 @@ h6{
     font-size: 38px;
 }
 
-.designprocess {
+designbreakdown {
     text-align: center;
 }
 .designprocess ul {
