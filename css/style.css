@@ -9,6 +9,10 @@ body {
 
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 
 header {
     background-image: url("../images/Header\ background.png");
@@ -19,6 +23,7 @@ header {
     
 }
 
+
 .aboutPageHeader {
     background-image:  url("../images/Header\ background.png");
     background-position: bottom;
@@ -27,19 +32,15 @@ header {
     height: 300px;
 }
 
-.awePageHeader {
-    background-image:  url("../images/AWE\ Case\ Study\ Cover.png");
-    background-position:bottom;
-    background-size: cover;
-    background-repeat: no-repeat;
-    height: 1200px;
-}
+
+
+
 #intro h2 {
     font-family: 'Poppins', sans-serif;
     font-weight: 500;
 }
 
-/* HERO SECTION GRID */
+/* HOMEPAGE HERO SECTION GRID */
 
 .herobannerGrid {
     display: grid;
@@ -78,7 +79,7 @@ header {
     margin: 0px 5%;
     padding: 20px;
     align-items: baseline;
-    height: 150px;
+
     
 }
 
@@ -276,10 +277,26 @@ h6{
 
 /*AWE CASE STUDY */
 
+
+.awePageTitle {
+    background-image:  url("../images/AWE\ Case\ Study\ Cover.png");
+    background-position:bottom;
+    background-size:cover;
+    background-repeat: no-repeat;
+    height: 1200px;
+
+    
+}
+.aweheading{
+    color: rgb(255, 255, 255);
+    padding-left: 60px !important;
+    top: 700px;
+    width: 700px;
+}
 #contentNav {
-    background-color: white;
-    height: 100px;
+    
     font-weight: 600;
+    background-color:rgb(245, 208, 204);
 
 }
 
@@ -296,12 +313,16 @@ h6{
 
 
 
-.overview, .designprocess, .research, .define, .lowfiwires, .styledev {
+.overview, .designprocess, .research, .define, .lowfiwires, .styledev, .prototype1, .prototype2, .testing, .clickablePrototypes, .conclusion {
     margin: 0 auto;
     padding: 50px;
     border-radius: 20px;
     background-color: white;
   
+}
+
+.conclusion ul {
+    list-style:circle;
 }
 
 .bestbits{
@@ -322,10 +343,20 @@ h6{
     border: none;
     border-radius: 12px;
     margin: 0 auto;
+   
 }
-.pageContent{
-    padding-right: 10%;
-    padding-left: 10%;
+
+.img-box {
+    height: 180px;
+    width: 100%;
+}
+
+.card-text{
+    height: 210px;
+}
+
+.bestbtn {
+    text-align: bottom;
 }
 
 .team {
@@ -354,31 +385,36 @@ h6{
     font-size: 38px;
 }
 
-designbreakdown {
+.designbreakdown {
     text-align: center;
 }
 .designprocess ul {
     padding: 0;
 }
 
-button {
+button, .btn, .btn-primary {
     font-family: 'Poppins', sans-serif;
     font-size: 16px;
     color: white;
-}
-#backbtn {
-    background:rgb(231, 160, 152);
-    height: 80px;
-    width: 150px;
-    color: white !important;
+    background-color: rgb(231, 160, 152);
+    border: none;
     border-radius: 16px;
+    cursor: pointer;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.25);
     outline: none;
-    border: none;
-    cursor: pointer;
+    padding: 10px;
 }
 
-#backbtn:hover {
+
+button:hover {
+    background: lightseagreen;
+    border-bottom: none !important;
+}
+
+.img-thumbnail {
+    border: none;
+}
+.btn:hover {
     background: lightseagreen;
     border-bottom: none !important;
 }
@@ -598,10 +634,7 @@ p #aboutbalance {
     }
 
     
-    
-    .awePageHeader {
-        height: 750px;
-    }
+
 
     .artGrid {
         display: grid;
@@ -724,6 +757,12 @@ header {
         font-size: 16px;
     }
 
+
+    .casestudyheadings {
+        font-size: 28px;
+        line-height: 40px;
+    }
+    
     /* MEDIA QUERY CASE STUDIES 600px */
 
    
@@ -913,6 +952,8 @@ header {
 
 .aboutPageHeader {
     height: 200px;
+    position:fixed;
+    z-index: 1000001;
 }
     .herobannerGrid {
         display: grid;
